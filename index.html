@@ -7,9 +7,10 @@
 
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
-<a href="http://programminghead.com" id="myButton">  
-  <input type="submit"/>  
-</a>
+<button id="mybutton"
+        onclick="alert('Calculations have started!');">Calculate Revenues</button>
+
+<br />
 <script
 type="text/javascript"
 src="//static.klaviyo.com/onsite/js/klaviyo.js?company_id=Wx4jFs">
@@ -17,7 +18,7 @@ src="//static.klaviyo.com/onsite/js/klaviyo.js?company_id=Wx4jFs">
 <script type="text/javascript">
  var _learnq = _learnq || [];
 document.getElementById("myButton").addEventListener("click",function(e){
-  _learnq.push(["track", "pressed", {
+  _learnq.push(["track", "mybutton", {
    "Title": "The Ultimate Guide to (Last Minute) Holiday Marketing",
    "ArticleID": "holiday-marketing-101",
    "Author": "Mike Green",
